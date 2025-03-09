@@ -45,5 +45,3 @@ for y in range(1, resize[1]): # iterate through the rows
 lines_count = text_image.count('\n') + 1
 print(lines_count)
 print(text_image)
-
-new_image.save("image_to_text/Screenshot.png")
