@@ -3,4 +3,5 @@
   * if we're being real, its kind of garbage
   * two rows of pixels is one line of text but images are still stretched (WHY)
 
-![Screenshot 2025-03-09 190403](https://github.com/user-attachments/assets/5a9e22e0-a3c8-4615-aede-aff3a392c80d)
+
+![Screenshot 2025-03-09 194922](https://github.com/user-attachments/assets/c4f6cd1e-679c-4f27-bfd5-0cd2be15af3a)
