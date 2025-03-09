@@ -2,7 +2,7 @@ from PIL import Image
 import statistics
 
 image = Image.open("image_to_text/Screenshot 2025-03-09 180607.png")
-ascii_grayscale = list("@$B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,\"^`'.  ")
+ascii_grayscale = list(' .,:;irsXA253hMHGS#9B&@')
 
 text_image = ""
 previous_line = []
@@ -23,8 +23,8 @@ for y in range(1, resize[1]): # iterate through the rows
     for x in range(1, resize[0]): # determines ascii char for every pixel in row (iterates through colummns)
         pixel = px[x, y]
 
-        #convert the rgb value of the pixel to a grayscale, then normalize to a range of 70 for the ascii chars
-        grayscale = ((0.2989 * pixel[0] + 0.5870 * pixel[1] + 0.1140 * pixel[2])/255)*70
+        #convert the rgb value of the pixel to a grayscale, then normalize to a range of 23 for the ascii chars
+        grayscale = ((0.2989 * pixel[0] + 0.5870 * pixel[1] + 0.1140 * pixel[2])/255)*23
         current_line.append(int(grayscale))
 
         print(f"Grayscale: {grayscale}, RGB: {pixel}, ASCII: {ascii_grayscale[int(grayscale)]}")
